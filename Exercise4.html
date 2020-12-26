@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.block{
+			width: 1510px;
+			height:950px;
+			background-color:#A3BCB6;
+		}
+		.heading{
+			width: 643px;
+   			 height: 41px;
+    		background-color: #A3BCB6;
+    		margin-left: 386px;
+
+		}
+		h1.s{
+			 font-variant: small-caps;
+			  font-weight: 700px;
+			  color:#164A41;
+		}
+		table, th, td {
+  		border: 1px solid #202020;
+  		padding: 5px;
+  		
+}
+#t01 th {
+  color: white;
+  background-color:#202020;
+}
+table {
+  border-spacing: 4px;
+}
+table.d {
+  table-layout: fixed;
+  width: 100%;  
+}
+		
+	</style>
+	<title>
+		FORM
+	</title>
+</head>
+<body bgcolor="#3F3F3F">
+	
+	<div class="block">
+		<div class="heading">
+			<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+
+			<center><h1 class="s">WELCOME TO FRESHER'S WORLD</h1></center>
+			</marquee>
+				<form>
+					<table class="d">
+					<tr id="t01">
+						<th colspan="3"><h4>REGISTRATION FORM</h4></th>
+					</tr>
+  					<tr>
+    				<td><b>Name<b></td>
+    				<td  colspan="2"><input type="text" id="cname" name="name"></td>
+  					</tr>
+  					<tr>
+    				<td><b>Age<b></td>
+    				<td colspan="2"> <select id="age" name="age">
+                                                           <option>........SELECT........</option>
+      				<option value="18">18</option>
+      				<option value="19">19</option>
+      				<option value="20">20</option>
+      				<option value="21">21</option>
+      				<option value="22">22</option>
+      				<option value="23">23</option>
+    				</select></td>
+  					</tr>
+  					<tr>
+    				<td><b>Password</td></b>
+    				<td colspan="2"><input type="Password" id="Password" name="pass"></td>
+ 					</tr>
+ 					<tr>
+    				<td><b>Re-enter Password</td></b>
+    				<td colspan="2"><input type="Password" id="Password" name="pass"></td>
+ 					</tr>
+ 					<tr>
+ 						<th rowspan="4" align="left">Select your Security Question</th>
+ 						<td  colspan="2"><input type="radio" name="qs" value="petname">What is your Pet name?</td>
+ 					</tr>
+ 						<tr>
+    				<td colspan="2"><input type="radio" name="qs" value="bfriend">Who is your Best Friend?</td>
+ 					</tr>
+ 					<tr>
+    				<td colspan="2"><input type="radio" name="qs" value="favcolor">What is your Favourite Colour?</td>
+ 					</tr>
+ 					<tr>
+    				<td colspan="2"><input type="radio" name="qs" value="favteacher">Who is your Favourite Teacher ?</td>
+ 					</tr>
+ 					<tr>
+    				<td><b>Answer Your security question</td></b>
+    				<td colspan="2"><input type="text" id="qsans" name="qsanswer"></td>
+  					</tr>
+  					<tr>
+    				<td><b>Email ID</td></b>
+    				<td colspan="2"><input type="text" id="email" name="email"></td>
+  					</tr>
+  					<tr>
+    				<td><b>Language Known</td></b>
+    				<td  colspan="2"><input type="checkbox" name="language" value="english">English<input type="checkbox" name="language" value="hindi">Hindi<input type="checkbox" name="language" value="malayalam">Malayalam</td>
+ 					</tr>
+ 					<tr>
+ 						<th rowspan="2" align="left">Phone number</th>
+ 						<td><b>Home</b></td>
+ 						<td><b>Office</b></td>
+ 					</tr>
+ 					<tr>
+ 						<td><input type="text" id="number" name="number"></td>
+ 						<td><input type="text" id="onumber" name="onumber"></td>
+ 					</tr>
+ 					<tr>
+    				<td><b>Upload CV</td></b>
+    				<td colspan="2"><input type="file" id="myfile" name="myfile"></td>
+ 					</tr>
+ 					<tr>
+    				<td><input type="reset" value="Reset"></td>
+    				<td colspan="2" align="center"><input type="submit" value="Submit"></td>
+ 					</tr>
+				</table>
+				</form>
+		</div>
+	</div>
+</body>
+</html>
