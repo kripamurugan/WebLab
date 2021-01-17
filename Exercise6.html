@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E6</title>
+		<style>
+      body
+      {
+        background-color: #FFFFFF;
+      }
+			.box1{
+				width: 641px;
+    			height: 527px;
+
+			}
+			.box2{
+    width: 641px;
+    height: 527px;
+    margin-top: -531px;
+    margin-left: 701px;
+
+			}
+			.box{
+				width: 1334px;
+				height: 42px;
+            background-color: #DADED4;
+        box-shadow: 20px 20px 12px grey;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			table, th, td {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 13px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ text-align: center;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.output{
+				width: 641px;
+    			height:1057px;
+    			border: solid;
+    			margin-top: 192px;
+
+			}
+      .f1
+      {
+        color:#004E7C;
+
+      }
+      .f2{
+        color: #004E7C;
+      }
+      .output1{
+        width: 641px;
+        height: 1057px;
+        border: solid;
+        float: left;
+    margin-left: 833px;
+    position: static;
+    margin-top: 185px;
+      }
+      button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 250px;
+  border-radius: 12px;
+ 
+  
+}
+.button2 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 250px;
+      margin-top: 11px;
+      border-radius: 12px;
+      
+}
+.f3
+{
+  text-align: center;
+}
+
+		</style>
+    </head>
+<script type="text/javascript">
+  function show()
+  {
+    fn();
+    showDiv();
+    invisible();
+  }
+  function show1()
+  {
+    fn1();
+    showDiv1();
+    invisible1();
+  }
+
+    function fn()
+            {
+
+            var x = document.getElementById("text0").value;
+            var xx = document.getElementById("text1").value;
+            var xx1= document.getElementById("text2").value;
+            var xx2= document.getElementById("text3").value;
+            var xx3= document.getElementById("text4").value;
+            var xx4= document.getElementById("text5").value;
+             document.getElementById("text20").value=x.length;
+             var x1 = x.indexOf(xx);
+              document.getElementById("text21").value =x1;
+              var x2=x.lastIndexOf(xx);
+              
+               document.getElementById("text23").value =x.indexOf(xx,5);
+                var x4=x.search(xx);
+               document.getElementById("text24").value =x4;
+                document.getElementById("text22").value =x2;  
+              document.getElementById("demo1").innerHTML=xx;
+               document.getElementById("demo2").innerHTML=x;
+                document.getElementById("demo3").innerHTML=xx1;
+                document.getElementById("demo31").innerHTML=xx1;
+                document.getElementById("demo4").innerHTML=xx2;
+                var f=x.slice(xx1);
+                document.getElementById("text25").value =f;
+                
+                document.getElementById("demo5").innerHTML =x.slice(xx1);
+                 document.getElementById("text26").value =x.slice(xx1,xx2);
+                 document.getElementById("text27").value =x.substring(xx1,xx2);
+                 document.getElementById("text28").value =x.substr(xx1);
+                 document.getElementById("text29").value =x.substr(xx1,xx2);
+                 document.getElementById("text31").value =x.toUpperCase();
+                 document.getElementById("text32").value =x.toLowerCase();
+                  document.getElementById("text30").value =x.replace(xx3,xx4);
+   
+            }
+
+            function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+ function invisible1() {
+   document.getElementById('welcomeDiv').style.display = "none";
+}
+function fn1()
+{
+  var y = document.getElementById("text10").value;
+  var y1 = document.getElementById("text11").value;
+  document.getElementById("t1").value =Math.PI;
+ document.getElementById("t2").value =Math.round(y);
+ document.getElementById("d1").innerHTML =y;
+   document.getElementById("dd").innerHTML =y1;
+   document.getElementById("d2").innerHTML =y;
+   document.getElementById("d3").innerHTML =y;
+   document.getElementById("d4").innerHTML =y;
+   document.getElementById("d5").innerHTML =y;
+   document.getElementById("d6").innerHTML =y;
+   document.getElementById("d7").innerHTML =y;
+   document.getElementById("d8").innerHTML =y;
+    document.getElementById("t3").value =Math.pow(y,y1);
+  document.getElementById("t4").value =Math.sqrt(y);
+  document.getElementById("t5").value =Math.abs(y);
+  document.getElementById("t6").value =Math.ceil(y);
+  document.getElementById("t7").value =Math.floor(y);
+  document.getElementById("t8").value =Math.sin(y* Math.PI / 180);
+  document.getElementById("t9").value =Math.cos(y* Math.PI / 180);
+  document.getElementById("t_10").value =Math.min(0, 150, 30, 20, -8, -200);
+ document.getElementById("t_11").value =Math.max(0, 150, 30, 20, -8, -200);
+  document.getElementById("t12").value =Math.random();
+
+}
+ function showDiv1() {
+   document.getElementById('welcomeDiv1').style.display = "block";
+}
+function invisible() {
+   document.getElementById('welcomeDiv1').style.display = "none";
+}
+
+
+  </script>
+   
+<body>
+   
+  
+
+  <div class="box">
+    <h1 class="f3">STRING AND MATH FUNCTIONS</h1>
+  </div>
+<div class="box1">
+<table style="width: 100%">
+  <tr>
+<th colspan="2"><h2 class="f1">String Functions</h2>
+  </tr>
+    <tr>
+    <td>Enter a String</td>
+    <td>  <input type="text" id="text0" ><br></td>
+  </tr>
+  <tr>
+    <td>Search a text</td>
+    <td>  <input type="text" id="text1" ><br></td>
+  </tr>
+  <tr>
+    <td>Slice start</td>
+    <td>  <input type="text" id="text2" ><br></td>
+  </tr>
+   <tr>
+    <td>Slice End</td>
+    <td>  <input type="text" id="text3" ><br></td>
+  </tr>
+     <tr>
+    <td>Replace the word</td>
+    <td>  <input type="text" id="text4"><br></td>
+  </tr>
+     <tr>
+    <td>Replace with</td>
+    <td>  <input type="text" id="text5"><br></td>
+  </tr>
+  <tr>
+    <th colspan="2"><button onclick="show()" class="button button2">GO</button></td>
+  </tr>
+</table>
+
+     
+</div>
+  <div class="box2">
+    <table style="width: 100%">
+
+  <tr>
+<th colspan="2"><h2 class="f2">Math Functions</h2></th>
+  </tr>
+    <tr>
+      <td>Enter a Number</td>
+    <td>  <input type="text" id="text10" ><br></td>
+  </tr>
+  <tr>
+    <td>Power term</td>
+    <td> <input type="text" id="text11" ><br></td>
+  </tr>
+   <tr>
+    <td>  <br></td>
+  </tr>
+  <tr>
+    <td> <br></td>
+  </tr>
+   <tr>
+    <td>  <br></td>
+  </tr>
+  <tr>
+    <td> <br></td>
+  </tr>
+   <tr>
+    <td>  <br></td>
+  </tr>
+  <tr>
+    <td> <br></td>
+  </tr>
+   <tr>
+    <td>  <br></td>
+  </tr>
+  <tr>
+    <td> <br></td>
+  </tr>
+  <tr>
+    <td> </td>
+  </tr>
+  <tr>
+    <th colspan="2"><button onclick="show1()" class="button button1">GO</button></th>
+  </tr>
+</table>
+
+</div>
+
+<div id="welcomeDiv"  style="display:none;" >
+  <div  class="output">
+  <table style="width: 100%">
+
+    <tr>
+      <td>Length of String is :</td>
+    <td> <input type="text" id="text20" ></td>
+  </tr>
+  <tr><td>First Index of is</td>
+    <td>  <input type="text" id="text21" ><br></td>
+  </tr>
+  <tr>
+<td>Last Index of is</td>
+    <td>  <input type="text" id="text22" ><br></td>
+  </tr>
+   <tr><td>Index with search Starting position 5 of <b id="demo1"></b> is</td>
+    <td>  <input type="text" id="text23" ><br></td>
+  </tr>
+     <tr>
+<td>Search <b id="demo1"></b> is</td>
+    <td>  <input type="text" id="text24" ><br></td>
+  </tr>
+     <tr>
+<td>Slice [<b id="demo3"></b>:]</b> is <b id="demo5"></b> </td>
+    <td>  <input type="text" id="text25" ><br></td>
+  </tr>
+  <tr>
+<td>Slice [<b id="demo31"></b>:<b id="demo4"></b>] is</td>
+    <td>  <input type="text" id="text26" ><br></td>
+  </tr>
+  <tr>
+<td>Substring [<b id="demo31"></b>:<b id="demo4"></b>] is</td>
+    <td>  <input type="text" id="text27" ><br></td>
+  </tr><tr>
+<td>Substr [:]<b id="demo2"></b> is</td>
+    <td>  <input type="text" id="text28" ><br></td>
+  </tr><tr>
+<td>Substr [<b id="demo31"></b>:] with <b id="demo4"></b> length is</td>
+    <td>  <input type="text" id="text29" ><br></td>
+  </tr><tr>
+<td>replace with is[:] is <b id="demo1"></b></td>
+    <td>  <input type="text" id="text30" ><br></td>
+  </tr><tr>
+<td>Uppercase</td>
+    <td>  <input type="text" id="text31" ><br></td>
+  </tr><tr>
+<td>Lowercase</td>
+    <td>  <input type="text" id="text32" ><br></td>
+  </tr>
+</table>
+
+  </div>
+</div>
+<div id="welcomeDiv1"  style="display:none;" >
+<div class="output1">
+<table style="width: 100%">
+  <tr>
+<th colspan="2"><h4>Math Functions</h4></th>
+  </tr>
+    <tr>
+    <td>Value of PI :</td>
+    <td>  <input type="text" id="t1" ><br></td>
+  </tr>
+  <tr>
+    <td>Round of <b id="d1"></b> is :</td>
+    <td>  <input type="text" id="t2" ><br></td>
+  </tr>
+  <tr>
+    <td><b id="d2"></b> raise to <b id="dd"></b> is :</td>
+    <td>  <input type="text" id="t3" ><br></td>
+  </tr>
+   <tr>
+    <td>Square root of <b id="d3"></b> is :
+</td>
+    <td>  <input type="text" id="t4" ><br></td>
+  </tr>
+     <tr>
+    <td>Absolute value of <b id="d4"></b> is :</td>
+    <td>  <input type="text" id="t5"><br></td>
+  </tr>
+     <tr>
+    <td>Ceil value of <b id="d5"></b> is :
+</td>
+    <td>  <input type="text" id="t6"><br></td>
+  </tr>
+  <tr>
+    <td>Floor value of <b id="d6"></b> is : 
+
+</td>
+    <td>  <input type="text" id="t7"><br></td>
+  </tr>
+  <tr>
+    <td>Sin value of <b id="d7"></b> is :
+
+</td>
+    <td>  <input type="text" id="t8"><br></td>
+  </tr>
+  <tr>
+    <td>Cos value of <b id="d8"></b> is :
+</td>
+    <td>  <input type="text" id="t9"><br></td>
+  </tr>
+  <tr>
+    <td>Minimum of (0, 150, 30, 20, -8, -200) is :
+</td>
+    <td>  <input type="text" id="t_10"><br></td>
+  </tr>
+  <tr>
+    <td>Maximum of (0, 150, 30, 20, -8, -200) is : 
+</td>
+    <td>  <input type="text" id="t_11"><br></td>
+  </tr>
+  <tr>
+    <td>A Random number is :
+</td>
+    <td>  <input type="text" id="t12"><br></td>
+  </tr>
+</table>
+</body>
+</html>
