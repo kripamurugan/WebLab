@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+           .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        padding: 12px 6px;
+        border-radius: 12px;
+                    }
+        input[type=number] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+        .border1 {
+           
+            margin-bottom: 2em;
+            background-color:#C5CBE3;
+            width: 100%;   
+        }
+       table{
+           padding: 5px;
+       }
+       tr{
+           
+       }
+       td,th{
+           padding: 10px;
+           border: 0px solid black;
+       }
+       #t01 {
+  width: 50%;    
+  background-color: #f1f1c1;
+  text-align: center;
+}
+       #cellr{
+        text-align: center;
+       }
+    
+       #calender{
+           border-collapse: collapse;
+              width: 50%;
+              text-align: center;
+              height: 50%;
+              
+  padding: 5px;
+
+
+
+       }
+       #btn{
+           background-color:green;
+           border: none;
+           color: white;
+           margin-left: 151px;
+       }
+       .box{
+        width: 1350px;
+        height: 50px;
+       }
+       .rr{
+        text-align: center;
+        color: #DAC4AF;
+        margin-left: 130px;
+         color: white;
+  text-shadow: 2px 2px 4px #000000;
+       }
+
+
+    </style>
+</head>
+
+<body bgcolor="#576F89">
+  <div class="box">
+<h1 class="rr">CALENDAR</h1>
+  </div>
+    <div class="border1">
+      <center>
+        <table class="tabselection" >
+            <tbody>
+                <tr class="selrow">
+                    <td><b>Enter Year</b></td><td><input id="year" type="number" placeholder="Year"> </td>
+                    
+                </tr>
+                <tr class="selrow">
+
+                    <td><b>Select Month</b></td> <td><select id="month">
+    <option value="1">1</option>
+    <option value="2">2</option>
+     <option value="3">3</option>
+      <option value="4">4</option>
+       <option value="5">5</option>
+    <option value="6">6</option>
+     <option value="7">7</option>
+      <option value="8">8</option>
+       <option value="9">9</option>
+    <option value="10">10</option>
+     <option value="11">11</option>
+      <option value="12">12</option>
+  </select></td>
+                </tr>
+                <tr>
+                                      <td id="cellr"><input onclick="generate()" type="button" id="btn" value="GET" class="button"> </td>
+                </tr>
+            </tbody>
+        </table>
+        </center>
+    </div>
+    <center>
+    <div id="content"> </div>
+    </center>
+</body>
+<script>
+    function generate() {
+        var init_content = "<table id='t01'><tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr><tr>"
+        var year_get = document.getElementById("year").value;
+        var month_get = document.getElementById("month").value;
+        month_get -=1;
+
+        var date = new Date(year_get,month_get);
+        var day = date.getDay();
+        for (var i = 0; i < day; i++) {
+            init_content += "<td></td>";
+        }
+        while (date.getMonth() == month_get) {
+            init_content += "<td>" + date.getDate() + "</td>";
+            if (date.getDay() % 7 == 6) {
+                init_content += "</tr><tr>";
+            }
+            date.setDate(date.getDate() + 1);
+        }
+        while(date.getDay() % 7 != 6 && date.getDay() % 7 != 0){
+            init_content += "<td></td>";
+            date.setDate(date.getDate() + 1);
+        }
+        if(date.getDay() % 7 > 0){
+            init_content += "<td></td></tr>";
+        }
+        init_content += "</table>"
+        document.getElementById("content").innerHTML = init_content;
+    }
+</script>
+
+</html>
