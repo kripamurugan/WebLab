@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Over</title>
+</head>
+<style>
+	.box{
+		width: 1200px;
+		height: 500px;
+		  
+	}
+	.container{
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	h1{
+		  text-shadow: 2px 2px 8px #FF0000;
+	}
+#img{
+	       margin-left: 378px;
+	        margin-top: 71px;
+
+}
+body
+{
+	background-color: #fbe3e8;
+}
+.border1{
+	border: solid;
+}
+</style>
+<body>
+	<div class="border1">
+		<h1 align="center"><b>JavaScript Event Handling Functions</b></h1>
+	</div>
+	<div class="box" id="box">
+		<img src="model.jpg" id="img"  width="60%">
+		<div class="container">
+<h1 id="txt1" style="color: yellow">BRING THE MOUSE HERE</h1>
+<h1 id="txt2" style="color: green">MOVE BACK</h1>
+</div>
+</div>
+
+<script>
+	document.getElementById("box").addEventListener("mouseover",mouseover);
+	document.getElementById("box").addEventListener("mouseout",mouseout);
+	function mouseover()
+	{
+		document.getElementById("img").src="logo.jpg";
+		document.getElementById("txt1").style.display="none";
+		document.getElementById("txt2").style.display="block";
+		
+	}
+	function mouseout()
+	{
+		document.getElementById("img").src="model.jpg";
+		document.getElementById("txt1").style.display="block";
+		document.getElementById("txt2").style.display="none";
+		
+	}
+
+</script>
+</body>
+</html>
