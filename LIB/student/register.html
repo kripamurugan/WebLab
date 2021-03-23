@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-image: url("img2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+ .container {
+position: absolute;
+top: 10%;
+
+transform: traslate(-50%,-50%);
+ }
+span{
+ border: 5px solid white;
+  padding:  0em 1em;
+  border-radius: 16px;
+  font-size: 24px;
+  line-height: 2;
+}
+
+ul li{
+display: block;
+}
+
+ul li a{
+text-decoration: none;
+color: #fff;
+display: block;
+font-family: Noto Sans, sans-serif;
+font-weight: lighter;
+font-size: 25px;
+padding: 0 20px;
+transition: 0.3s all;
+}
+
+ul li a:hover{
+color: red;
+transition: .9s;
+}
+
+
+
+
+
+		.block{
+			width: 1510px;
+			height:50px;
+
+		}
+    .rr{
+      width: 1300px;
+      height: 400px;
+    }
+		h1.s{
+			 font-variant: small-caps;
+			  font-weight: 700px;
+			  color: #EED971FF;
+		}
+		table, th, td {
+  		border: 0px solid #202020;
+  		padding: 3px;
+      margin-left: 379px;
+       text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  color: yellow;
+  font-size: 120%;
+
+}
+input[type=text], select {
+  width: 71%;
+  padding: 12px 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 71%;
+  padding: 12px 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=Password]{
+  width: 71%;
+  padding: 12px 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+input[type=submit] {
+  width: 71%;
+  background: none;
+  color: #FAD0C9FF;
+  padding: 14px 20px;
+  margin: 10px;
+  border: 1px solid;
+  transition: 0.8s;
+  border-radius: 4px;
+  cursor: pointer;
+   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #6E6E6DFF;
+}
+input[type=reset] {
+  width: 71%;
+  background: none;
+  color: #FAD0C9FF;
+  padding: 14px 20px;
+  margin: 10px;
+  border: 1px solid;
+  transition: 0.8s;
+  border: 1px solid ;
+  border-radius: 4px;
+  cursor: pointer;
+   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  
+}
+
+input[type=reset]:hover {
+  background-color: #6E6E6DFF;
+}
+
+#t01 th {
+  color: white;
+  background-color:#202020;
+}
+table {
+  border-spacing: 4px;
+}
+table.d {
+  table-layout: fixed;
+  width: 65%;  
+}
+		
+	</style>
+   
+	<title>
+		FORM
+	</title>
+</head>
+<body>
+<div class="container">
+  <ul>
+   <li><a href="home.html" class="link"><span>Home</span></a></li>
+   <li><a href="studentlogin.html" class="link"><span>Already a User</span></a></li>
+  </ul>
+</div>
+	
+	<div class="block">
+
+			<center><h1 class="s">Register</h1></center>
+    </div>
+    
+<div class="rr">
+				<form name="form" action="" method="POST" onsubmit="return validateForm()">
+					<table class="d">
+  					<tr>
+    				<td ><b>Name<b></td>
+    				<td  colspan="2"><input type="text" id="name" name="name" required placeholder="Enter Your Name"></td>
+  					</tr><tr>
+            <td ><b>DOB<b></td>
+            <td colspan="2">  <input type="date" id="birthday" name="birthday"></td>
+            </tr>
+              <tr>
+            <td ><b>Admn No.<b></td>
+            <td  colspan="2"><input type="text" id="adno" name="adno" required placeholder="Enter Your Admission Number"></td>
+            </tr>
+  					<tr>
+    				<td ><b>Department<b></td>
+    				<td colspan="2"> <select id="age" name="department">
+      			<option value="MCA">Select</option>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+              <option value="MBA">MCOM</option>
+    				</select></td>
+  					</tr>
+              <tr>
+            <td ><b>Gender</b></td><td colspan="2"><input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label></td>
+  </tr>
+   <tr>
+            <td ><b>Phone Number<b></td>
+            <td  colspan="2"><input type="text" id="adno" name="adno" required placeholder="Enter Your Phonenumber"></td>
+            </tr>
+             <td ><b>Email<b></td>
+            <td  colspan="2"><input type="text" id="adno" name="adno" required placeholder="Enter Your Email"></td>
+            </tr>
+  					<tr>
+    				<td ><b>Password</td></b>
+    				<td colspan="2"><input type="Password" id="password" name="password" required placeholder="Enter Your Password "></td>
+ 					</tr>
+  				
+  					
+
+ 					<tr>
+            <td ><b>Re-Password</td></b>
+            <td colspan="2"><input type="Password" id="cpassword" name="cpassword" required placeholder="Re-Enter Password"></td>
+          </tr>
+ 					<tr>
+    				<td ><input type="reset" value="Reset"></td>
+    				<td colspan="2" align="center"><input type="submit" value="Submit"></td>
+ 					</tr>
+				</table>
+				</form>
+<script>
+        function validateForm() {
+
+            var name = document.form.name.value;
+            var number = document.form.number.value;
+            var password = document.form.password.value;
+            var temp = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            var num = /[0-9!@#$%^&*]/
+            if (isNaN(number)) {
+                alert("Enter valid Mobile number");
+              }
+            if (password == "" || password.length < 8 || !temp.test(password)) {
+                alert("Enter minimum 8 digit Password  (example : Password@123)");
+                document.form.password.focus();
+                return false;
+
+           }
+
+             if(num.test(name)){
+                alert("Enter Valid Name !!");
+                document.form.name.focus();
+                return false;
+            }
+            
+            
+             if (number.length != 10) {
+                alert("Please enter Mobile number with 10 digit");
+                return false;
+            }
+            
+}
+  
+         
+
+        </script>
+		</div>
+	</div>
+</body>
+</html>

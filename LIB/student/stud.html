@@ -1,0 +1,189 @@
+<html>
+<head>
+	<title>
+	stud_search</title>
+	<style>
+body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-image: url("img2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+  
+		.block{
+			width: 1510px;
+			height:50px;
+
+		}
+    .rr{
+      width: 1300px;
+      height: 400px;
+    }
+		h1.s{
+			 font-variant: small-caps;
+			  font-weight: 700px;
+			  color:#EED971FF;
+		}
+		table, th, td {
+  		border: 0px solid #202020;
+  		padding: 15px;
+      margin-left: 379px;
+       text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  color: yellow;
+  font-size: 120%;
+
+}
+input[type=text], select {
+  width: 71%;
+  padding: 12px 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=Password]{
+  width: 71%;
+  padding: 12px 7px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+input[type=submit] {
+  width: 71%;
+  background: none;
+  color: #FAD0C9FF;
+  padding: 14px 20px;
+  margin: 10px;
+  border: 1px solid;
+  transition: 0.8s;
+  border-radius: 4px;
+  cursor: pointer;
+   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #6E6E6DFF;
+}
+input[type=reset] {
+  width: 71%;
+  background: none;
+  color: #FAD0C9FF;
+  padding: 14px 20px;
+  margin: 10px;
+  border: 1px solid;
+  transition: 0.8s;
+  border: 1px solid ;
+  border-radius: 4px;
+  cursor: pointer;
+   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+  
+}
+
+.container {
+position: absolute;
+top: 10%;
+left: 10%;
+transform: traslate(-50%,-50%);
+ }
+span{
+ border: 5px solid white;
+  padding:  0em 1em;
+  border-radius: 16px;
+  font-size: 24px;
+  line-height: 2;
+}
+
+ul li{
+display: block;
+}
+
+ul li a{
+text-decoration: none;
+color: #fff;
+display: inline-block;
+font-family: Noto Sans, sans-serif;
+font-weight: lighter;
+font-size: 25px;
+padding: 0 20px;
+transition: 0.3s all;
+}
+
+ul li a:hover{
+color: red;
+transition: .9s;
+}
+
+
+
+input[type=reset]:hover {
+  background-color: #6E6E6DFF;
+}
+
+#t01 th {
+  color: white;
+  background-color:#202020;
+}
+table {
+  border-spacing: 4px;
+}
+table.d {
+  table-layout: fixed;
+  width: 65%;  
+}
+
+</style>
+
+	</head>
+<body >
+<div class="container">
+  <ul>
+   <li><a href="home.html" class="link"><span>Home</span></a></li>
+<li><a href="student.html" class="link"><span>Back</span></a></li>
+   <li><a href="studentlogin.html" class="link"><span>Logout</span></a></li>
+  </ul>
+</div>
+<div class="block">
+
+			<center><h1 class="s"><b>Search For a Book<b></h1></center>
+    </div>
+
+
+<div class="rr">
+
+				<form name="form" action="" method="POST" onsubmit="return validateForm()">
+					<table class="d">
+  					<tr>
+    				
+    				<td  colspan="2"><input type="text" id="bookname" name="bookname" required placeholder="Enter Book Name"></td>
+  					</tr>
+             
+ 					<tr>
+    				
+    				<td colspan="2" align="center"><input type="submit" value="Search"></td>
+ 					</tr>
+				</table>
+				</form>
+
+
+</body>
+</html>
+
+
+
+	
